@@ -1,0 +1,151 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "tipoDiabetes",
+              "type": "TipoDiabetes"
+            }
+          ],
+          "name": "QueAlimentosEvitarIntent",
+          "samples": [
+            "Qué alimentos debo evitar si tengo {tipoDiabetes}",
+            "Dime qué alimentos debo evitar con {tipoDiabetes}",
+            "Qué no debo comer con {tipoDiabetes}",
+            "Qué alimentos evitar si tengo {tipoDiabetes}",
+            "Cuáles alimentos debo evitar si tengo {tipoDiabetes}",
+            "Qué debo evitar si tengo diabetes tipo {tipoDiabetes}",
+            "Dime alimentos que no debo comer para {tipoDiabetes}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "tipoComida",
+              "type": "TipoComida"
+            }
+          ],
+          "name": "ComoEquilibrarComidasIntent",
+          "samples": [
+            "Cómo puedo equilibrar mis comidas de {tipoComida}",
+            "Cómo equilibro mis comidas con {tipoComida}",
+            "Dime cómo equilibrar mi dieta con {tipoComida}",
+            "Cómo hago para equilibrar mi alimentación de {tipoComida}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "enfoqueNutricional",
+              "type": "EnfoqueNutricional"
+            }
+          ],
+          "name": "ConsejoNutricionalIntent",
+          "samples": [
+            "Dame un consejo nutricional para controlar el azúcar con un enfoque {enfoqueNutricional}",
+            "Dame un consejo para controlar el azúcar usando {enfoqueNutricional}",
+            "Dime cómo controlar el azúcar con la dieta {enfoqueNutricional}",
+            "Dame un consejo para mi azúcar en {enfoqueNutricional}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "nivelGlucemia",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "GlucemiaIntent",
+          "samples": [
+            "Tengo {nivelGlucemia} de glucemia",
+            "Mi glucosa está en {nivelGlucemia}",
+            "El nivel de glucosa es {nivelGlucemia}",
+            "Tengo un nivel de azúcar de {nivelGlucemia}",
+            "Mi nivel de glucosa es {nivelGlucemia}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "diabetes tipo 1"
+              }
+            },
+            {
+              "name": {
+                "value": "diabetes tipo 2"
+              }
+            },
+            {
+              "name": {
+                "value": "diabetes gestacional"
+              }
+            }
+          ],
+          "name": "TipoDiabetes"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "vegetales"
+              }
+            },
+            {
+              "name": {
+                "value": "frutas"
+              }
+            },
+            {
+              "name": {
+                "value": "proteínas"
+              }
+            }
+          ],
+          "name": "TipoComida"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "bajo en carbohidratos"
+              }
+            },
+            {
+              "name": {
+                "value": "alto en fibra"
+              }
+            },
+            {
+              "name": {
+                "value": "balanceado"
+              }
+            }
+          ],
+          "name": "EnfoqueNutricional"
+        }
+      ],
+      "invocationName": "gluco skill"
+    }
+  }
+}
